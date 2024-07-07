@@ -3,51 +3,59 @@
 ### YUM QUERIES  
 
 <table>
-  <tr>
-    <th>GROUP</th>
-    <th>COMMAND</th>
-    <th>DESCRIPTIONS AND TASKS</th>
-  </tr>  
-  <tr>
-    <th colspan = 3; align = "left"> help - Display yum commands and options</tr>
-  </tr>
-  <tr>
-    <td></td>
-    <td><b>yum help</b></td>
-    <td>Show yum subcommands and options</td>
-  </tr>
+  <tr><th>GROUP</th><th>COMMAND</th><th>DESCRIPTIONS AND TASKS</th></tr>  
+  <tr><th colspan = 3; align = "left"> help - Display yum commands and options</tr></tr>
+  <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+  <tr><td colspan = 3>Individual packages</td></tr>
+  <tr><th colspan = 3; align = "left"> list - List package names from repositories</tr></tr>
+  <tr><td></td><td><b>yum list available</b></td><td>List all available packages</td></tr>
+  <tr><td></td><td><b>yum list installed</b></td><td>List all installed packagess</td></tr>
+  <tr><td></td><td><b>yum list all</b></td><td>List installed and available packages</td></tr>
+  <tr><td></td><td><b>yum list kernel</b></td><td>List installed and available kernel packages</td></tr>
+  <tr><th colspan = 3; align = "left"> info - Display information about a package</tr></tr>	
+  <tr><td></td><td><b>yum info vsftpd</b></td><td>List info about vsftpd package</td></tr>
+  <tr><th colspan = 3; align = "left"> deplist - Display dependencies for a package</tr></tr>	
+  <tr><td></td><td><b>yum deplist nfs-utils</b></td><td>List dependencies and packages providing them</td></tr>
+  <tr><th colspan = 3; align = "left"> provides - Find packages that provide the queried file</tr></tr>	
+  <tr><td></td><td><b>yum provides "*bin/top"</b></td><td>Show package that contains top command</td></tr>
+  <tr><td></td><td><b>yum provides "*/README.top"</b></td><td>Show package containing README.top file</td></tr>
+  <tr><th colspan = 3; align = "left"> search - Search package names and descriptions for a term</tr></tr>	
+  <tr><td></td><td><b>yum search samba</b></td><td>Find packages with samba in name or description</td></tr>
+  <tr><th colspan = 3; align = "left"> updateinfo - Get information about available package updates</tr></tr>	
+  <tr><td></td><td><b>yum updateinfo security</b></td><td>Get info on available security updates</td></tr>
+  <tr><td colspan = 3>Groups of packages</td></tr>
+  <tr><td></td><td><b>yum grouplist</b></td><td>List names of installed and available package groups</td></tr>	
+  <tr><th colspan = 3; align = "left"> groupinfo - Display description and contents of a package group</tr></tr>	
+  <tr><td></td><td><b>yum groupinfo "Web Server"</b></td><td>See packages in Web Server group</td></tr> 
+  <tr><td></td><td><b>yum check-update</b></td><td>Query repositories for available package updates</td></tr>
+</table>
+
+
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+ <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+
 </table>  
 
-  ||
-  
- Individual packages ||  
- list | | List package names from repositories |
-  **yum list available** | List all available packages |   
-  **yum list installed** | List all installed packages | 
-  **yum list all** | List installed and available packages |
-  **yum list kernel** | List installed and available kernel packages |
- info | | Display information about a package |
-  **yum info vsftpd** |  List info about vsftpd package |
- deplist | |	Display dependencies for a package |
-  **yum deplist nfs-utils** | List dependencies and packages providing them |
 
-
-| provides	Find packages that provide the queried file
-| yum provides “*bin/top”  
-| Show package that contains top command
-| yum provides “*/README.top”  
-| Show package containing README.top file
-| search	Search package names and descriptions for a term
-| yum search samba 
-| Find packages with samba in name or description
-| updateinfo	Get information about available package updates
-| yum updateinfo security  
-| Get info on available security updates
-| Groups of packages
-| grouplist	List names of installed and available package groups
-| groupinfo Display description and contents of a package group
-| yum groupinfo “Web Server”  See packages in Web Server group
-| check-update	Query repositories for available package updates
+| 	
 
 
 MANAGE YUM REPOSITORIES
