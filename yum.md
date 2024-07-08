@@ -30,44 +30,46 @@
   <tr><td></td><td><b>yum check-update</b></td><td>Query repositories for available package updates</td></tr>
 </table>
 
+### MANAGE YUM REPOSITORIES
 
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
- <tr><td></td><td><b>yum help</b></td><td>Show yum subcommands and options</td></tr>
+<table>
+  <tr><th>GROUP</th><th>COMMAND</th><th>DESCRIPTIONS AND TASKS</th></tr>  
+  <tr><th colspan = 3; align = "left"> repolist - Display enabled software repositories</tr></tr>
+  <tr><th colspan = 3; align = "left"> repoinfo - Display information about enabled yum repositories</tr></tr>
+  <tr><td></td><td><b>yum repoinfo rhel-7-server-rpms</b></td><td>See info on rhel-7-server-rpms repo</td></tr>
+	
+  <tr><th colspan = 3; align = "left"> repo-pkgs - Work with packages in a particular repository</tr></tr>
+  <tr><td></td><td><b>yum repo-pkgs my-rpms list</b></td><td>List packages from my-rpms repo</td></tr>
+  <tr><td></td><td><b>yum repo-pkgs my-rpms install</b></td><td>Install all packages from my-rpms repo</td></tr>
+  <tr><td></td><td><b>yum repo-pkgs my-rpms remove</b></td><td>Remove all packages from my-rpms repo</td></tr>
+  <tr><th colspan = 3; align = "left"> makecache - Download yum repository data to cache</tr></tr>
+</table>
 
-</table>  
+  
+  <tr><td></td><td><b>yum list kernel</b></td><td>List installed and available kernel packages</td></tr>
+  <tr><th colspan = 3; align = "left"> info - Display information about a package</tr></tr>	
+  <tr><td></td><td><b>yum info vsftpd</b></td><td>List info about vsftpd package</td></tr>
+  <tr><th colspan = 3; align = "left"> deplist - Display dependencies for a package</tr></tr>	
+  <tr><td></td><td><b>yum deplist nfs-utils</b></td><td>List dependencies and packages providing them</td></tr>
+  <tr><th colspan = 3; align = "left"> provides - Find packages that provide the queried file</tr></tr>	
+  <tr><td></td><td><b>yum provides "*bin/top"</b></td><td>Show package that contains top command</td></tr>
+  <tr><td></td><td><b>yum provides "*/README.top"</b></td><td>Show package containing README.top file</td></tr>
+  <tr><th colspan = 3; align = "left"> search - Search package names and descriptions for a term</tr></tr>	
+  <tr><td></td><td><b>yum search samba</b></td><td>Find packages with samba in name or description</td></tr>
+  <tr><th colspan = 3; align = "left"> updateinfo - Get information about available package updates</tr></tr>	
+  <tr><td></td><td><b>yum updateinfo security</b></td><td>Get info on available security updates</td></tr>
+  <tr><td colspan = 3>Groups of packages</td></tr>
+  <tr><td></td><td><b>yum grouplist</b></td><td>List names of installed and available package groups</td></tr>	
+  <tr><th colspan = 3; align = "left"> groupinfo - Display description and contents of a package group</tr></tr>	
+  <tr><td></td><td><b>yum groupinfo "Web Server"</b></td><td>See packages in Web Server group</td></tr> 
+  <tr><td></td><td><b>yum check-update</b></td><td>Query repositories for available package updates</td></tr>
+ 
 
-
-| 	
-
-
-MANAGE YUM REPOSITORIES
-SUBCOMMAND	DESCRIPTIONS AND TASKS
-repolist	Display enabled software repositories
-repoinfo Display information about enabled yum repositories *
-yum repoinfo rhel-7-server-rpms See info on rhel-7-server-rpms repo
-repo-pkgs	Work with packages in a particular repository *
-yum repo-pkgs my-rpms list  List packages from my-rpms repo
-yum repo-pkgs my-rpms install Install all packages from my-rpms repo
-yum repo-pkgs my-rpms remove  Remove all packages from my-rpms repo
-makecache Download yum repository data to cache
+ 
+  
+ 
+  
+ 
 TROUBLESHOOT AND MAINTAIN YUM
 SUBCOMMAND	DESCRIPTIONS AND TASKS
  
